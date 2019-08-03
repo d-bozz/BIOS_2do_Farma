@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Medicamentos>
+  <Medicamento>
+    <Farmaceutica>
+      <NombreFarmaceutica>Urufarma</NombreFarmaceutica>
+      <DireccionFisica>Juan R. Gómez 3265 Montevideo, Uruguay.</DireccionFisica>
+      <Telefono>2487 2748</Telefono>
+      <Correo>contacto@urufarma.com.uy</Correo>
+    </Farmaceutica>
+    <Codigo>1</Codigo>
+    <NombreMedicamento>Ibupirac</NombreMedicamento>
+    <Descripcion>Alivio sintomático de: Dolores musculares, Dolores de espalda, Fiebre Dolores de cabeza, Dolor asociado a los estados gripales, Dolores menstruales, Dolores de dientes, Dolores producidos por artritis.</Descripcion>
+    <Precio>100</Precio>
+    <Tipo>otros</Tipo>
+    <Stock>150</Stock>
+  </Medicamento>
+</Medicamentos>

@@ -1,0 +1,14 @@
+C:\Proyectos\BiosFarma\Persistencia\bin\Debug\Persistencia.dll
+C:\Proyectos\BiosFarma\Persistencia\bin\Debug\Persistencia.pdb
+C:\Proyectos\BiosFarma\Persistencia\bin\Debug\Entidades Compartidas.dll
+C:\Proyectos\BiosFarma\Persistencia\bin\Debug\Entidades Compartidas.pdb
+C:\Proyectos\BiosFarma\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Proyectos\BiosFarma\Persistencia\obj\Debug\Persistencia.dll
+C:\Proyectos\BiosFarma\Persistencia\obj\Debug\Persistencia.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\bin\Debug\Persistencia.dll
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\bin\Debug\Persistencia.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\bin\Debug\Entidades Compartidas.dll
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\bin\Debug\Entidades Compartidas.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\obj\Debug\Persistencia.csprojResolveAssemblyReference.cache
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\obj\Debug\Persistencia.dll
+C:\Users\sistemas\Desktop\BiosFarma\Persistencia\obj\Debug\Persistencia.pdb

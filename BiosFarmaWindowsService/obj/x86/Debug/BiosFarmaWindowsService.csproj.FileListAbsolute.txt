@@ -1,0 +1,17 @@
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.exe.config
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.exe
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.pdb
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.ProjectInstaller.resources
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.ServicioHorario.resources
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.csproj.GenerateResource.Cache
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.exe
+C:\Proyectos\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.pdb
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.exe.config
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.exe
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\bin\Debug\BiosFarmaWindowsService.pdb
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.csprojResolveAssemblyReference.cache
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.ProjectInstaller.resources
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.ServicioHorario.resources
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.csproj.GenerateResource.Cache
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.exe
+C:\Users\sistemas\Desktop\BiosFarma\BiosFarmaWindowsService\obj\x86\Debug\BiosFarmaWindowsService.pdb

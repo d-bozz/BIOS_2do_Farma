@@ -1,0 +1,22 @@
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\ServicioFarmaWCF.dll
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\ServicioFarmaWCF.pdb
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Entidades Compartidas.dll
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Logica.dll
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Persistencia.dll
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Entidades Compartidas.pdb
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Logica.pdb
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\bin\Persistencia.pdb
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.csprojResolveAssemblyReference.cache
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.dll
+C:\Proyectos\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.pdb
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\ServicioFarmaWCF.dll
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\ServicioFarmaWCF.pdb
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Entidades Compartidas.dll
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Logica.dll
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Persistencia.dll
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Entidades Compartidas.pdb
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Logica.pdb
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\bin\Persistencia.pdb
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.csprojResolveAssemblyReference.cache
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.dll
+C:\Users\sistemas\Desktop\BiosFarma\ServicioFarmaWCF\obj\Debug\ServicioFarmaWCF.pdb

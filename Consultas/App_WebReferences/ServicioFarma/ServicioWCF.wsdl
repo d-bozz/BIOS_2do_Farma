@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServicioWCF" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://prueba-pc/ServicioFarmaWCF/ServicioWCF.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://prueba-pc/ServicioFarmaWCF/ServicioWCF.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://prueba-pc/ServicioFarmaWCF/ServicioWCF.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/Entidades_Compartidas" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServicioWCF_AltaFarmaceutica_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaFarmaceutica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AltaFarmaceutica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaFarmaceuticaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarFarmaceutica_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFarmaceutica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarFarmaceutica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarFarmaceuticaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarFarmaceutica_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarFarmaceutica" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarFarmaceutica_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarFarmaceuticaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarFarmaceuticaActiva_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFarmaceuticaActiva" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarFarmaceuticaActiva_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarFarmaceuticaActivaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListarFarmaceuticasActivas_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFarmaceuticasActivas" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListarFarmaceuticasActivas_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarFarmaceuticasActivasResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregarMedicamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarMedicamentos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregarMedicamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarMedicamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarMedicamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarMedicamentos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarMedicamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarMedicamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarMedicamentos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarMedicamentos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarMedicamentos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarMedicamentosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_MedicamentosStock_InputMessage">
+    <wsdl:part name="parameters" element="tns:MedicamentosStock" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_MedicamentosStock_OutputMessage">
+    <wsdl:part name="parameters" element="tns:MedicamentosStockResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarMedicamentosActivos_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarMedicamentosActivos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarMedicamentosActivos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarMedicamentosActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListarMedicamentosActivos_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMedicamentosActivos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListarMedicamentosActivos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListarMedicamentosActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListaPedidosEsteAno_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaPedidosEsteAno" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListaPedidosEsteAno_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaPedidosEsteAnoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListaPedidosGeneradoEnviado_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListaPedidosGeneradoEnviado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ListaPedidosGeneradoEnviado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListaPedidosGeneradoEnviadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AltaPedido_InputMessage">
+    <wsdl:part name="parameters" element="tns:AltaPedido" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AltaPedido_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AltaPedidoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_CambioDeEstado_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambioDeEstado" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_CambioDeEstado_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambioDeEstadoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_EliminarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:EliminarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarUsuario_InputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarUsuario" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_ModificarUsuario_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ModificarUsuarioResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_CambioContrasena_InputMessage">
+    <wsdl:part name="parameters" element="tns:CambioContrasena" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_CambioContrasena_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CambioContrasenaResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_Login_InputMessage">
+    <wsdl:part name="parameters" element="tns:Login" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_Login_OutputMessage">
+    <wsdl:part name="parameters" element="tns:LoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarUsuariosActivos_InputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarUsuariosActivos" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_BuscarUsuariosActivos_OutputMessage">
+    <wsdl:part name="parameters" element="tns:BuscarUsuariosActivosResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregaHorasExtras_InputMessage">
+    <wsdl:part name="parameters" element="tns:AgregaHorasExtras" />
+  </wsdl:message>
+  <wsdl:message name="IServicioWCF_AgregaHorasExtras_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AgregaHorasExtrasResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServicioWCF">
+    <wsdl:operation name="AltaFarmaceutica">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/AltaFarmaceutica" message="tns:IServicioWCF_AltaFarmaceutica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/AltaFarmaceuticaResponse" message="tns:IServicioWCF_AltaFarmaceutica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFarmaceutica">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/EliminarFarmaceutica" message="tns:IServicioWCF_EliminarFarmaceutica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/EliminarFarmaceuticaResponse" message="tns:IServicioWCF_EliminarFarmaceutica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarFarmaceutica">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ModificarFarmaceutica" message="tns:IServicioWCF_ModificarFarmaceutica_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ModificarFarmaceuticaResponse" message="tns:IServicioWCF_ModificarFarmaceutica_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFarmaceuticaActiva">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/BuscarFarmaceuticaActiva" message="tns:IServicioWCF_BuscarFarmaceuticaActiva_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/BuscarFarmaceuticaActivaResponse" message="tns:IServicioWCF_BuscarFarmaceuticaActiva_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarFarmaceuticasActivas">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ListarFarmaceuticasActivas" message="tns:IServicioWCF_ListarFarmaceuticasActivas_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ListarFarmaceuticasActivasResponse" message="tns:IServicioWCF_ListarFarmaceuticasActivas_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarMedicamentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/AgregarMedicamentos" message="tns:IServicioWCF_AgregarMedicamentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/AgregarMedicamentosResponse" message="tns:IServicioWCF_AgregarMedicamentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarMedicamentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/EliminarMedicamentos" message="tns:IServicioWCF_EliminarMedicamentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/EliminarMedicamentosResponse" message="tns:IServicioWCF_EliminarMedicamentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarMedicamentos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ModificarMedicamentos" message="tns:IServicioWCF_ModificarMedicamentos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ModificarMedicamentosResponse" message="tns:IServicioWCF_ModificarMedicamentos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="MedicamentosStock">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/MedicamentosStock" message="tns:IServicioWCF_MedicamentosStock_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/MedicamentosStockResponse" message="tns:IServicioWCF_MedicamentosStock_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarMedicamentosActivos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/BuscarMedicamentosActivos" message="tns:IServicioWCF_BuscarMedicamentosActivos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/BuscarMedicamentosActivosResponse" message="tns:IServicioWCF_BuscarMedicamentosActivos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListarMedicamentosActivos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ListarMedicamentosActivos" message="tns:IServicioWCF_ListarMedicamentosActivos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ListarMedicamentosActivosResponse" message="tns:IServicioWCF_ListarMedicamentosActivos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaPedidosEsteAno">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ListaPedidosEsteAno" message="tns:IServicioWCF_ListaPedidosEsteAno_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ListaPedidosEsteAnoResponse" message="tns:IServicioWCF_ListaPedidosEsteAno_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListaPedidosGeneradoEnviado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ListaPedidosGeneradoEnviado" message="tns:IServicioWCF_ListaPedidosGeneradoEnviado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ListaPedidosGeneradoEnviadoResponse" message="tns:IServicioWCF_ListaPedidosGeneradoEnviado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/BuscarPedido" message="tns:IServicioWCF_BuscarPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/BuscarPedidoResponse" message="tns:IServicioWCF_BuscarPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AltaPedido">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/AltaPedido" message="tns:IServicioWCF_AltaPedido_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/AltaPedidoResponse" message="tns:IServicioWCF_AltaPedido_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioDeEstado">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/CambioDeEstado" message="tns:IServicioWCF_CambioDeEstado_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/CambioDeEstadoResponse" message="tns:IServicioWCF_CambioDeEstado_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/AgregarUsuario" message="tns:IServicioWCF_AgregarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/AgregarUsuarioResponse" message="tns:IServicioWCF_AgregarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/EliminarUsuario" message="tns:IServicioWCF_EliminarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/EliminarUsuarioResponse" message="tns:IServicioWCF_EliminarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuario">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/ModificarUsuario" message="tns:IServicioWCF_ModificarUsuario_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/ModificarUsuarioResponse" message="tns:IServicioWCF_ModificarUsuario_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CambioContrasena">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/CambioContrasena" message="tns:IServicioWCF_CambioContrasena_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/CambioContrasenaResponse" message="tns:IServicioWCF_CambioContrasena_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/Login" message="tns:IServicioWCF_Login_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/LoginResponse" message="tns:IServicioWCF_Login_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuariosActivos">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/BuscarUsuariosActivos" message="tns:IServicioWCF_BuscarUsuariosActivos_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/BuscarUsuariosActivosResponse" message="tns:IServicioWCF_BuscarUsuariosActivos_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AgregaHorasExtras">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServicioWCF/AgregaHorasExtras" message="tns:IServicioWCF_AgregaHorasExtras_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServicioWCF/AgregaHorasExtrasResponse" message="tns:IServicioWCF_AgregaHorasExtras_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServicioWCF" type="tns:IServicioWCF">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AltaFarmaceutica">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/AltaFarmaceutica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarFarmaceutica">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/EliminarFarmaceutica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarFarmaceutica">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ModificarFarmaceutica" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarFarmaceuticaActiva">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/BuscarFarmaceuticaActiva" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarFarmaceuticasActivas">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ListarFarmaceuticasActivas" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarMedicamentos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/AgregarMedicamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarMedicamentos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/EliminarMedicamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarMedicamentos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ModificarMedicamentos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="MedicamentosStock">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/MedicamentosStock" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarMedicamentosActivos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/BuscarMedicamentosActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListarMedicamentosActivos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ListarMedicamentosActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaPedidosEsteAno">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ListaPedidosEsteAno" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListaPedidosGeneradoEnviado">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ListaPedidosGeneradoEnviado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarPedido">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/BuscarPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AltaPedido">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/AltaPedido" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioDeEstado">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/CambioDeEstado" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/AgregarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EliminarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/EliminarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ModificarUsuario">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/ModificarUsuario" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CambioContrasena">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/CambioContrasena" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Login">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/Login" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarUsuariosActivos">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/BuscarUsuariosActivos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AgregaHorasExtras">
+      <soap:operation soapAction="http://tempuri.org/IServicioWCF/AgregaHorasExtras" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServicioWCF">
+    <wsdl:port name="BasicHttpBinding_IServicioWCF" binding="tns:BasicHttpBinding_IServicioWCF">
+      <soap:address location="http://prueba-pc/ServicioFarmaWCF/ServicioWCF.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

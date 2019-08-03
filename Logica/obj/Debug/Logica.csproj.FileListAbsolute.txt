@@ -1,0 +1,18 @@
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Logica.dll
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Logica.pdb
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Entidades Compartidas.dll
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Persistencia.dll
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Entidades Compartidas.pdb
+C:\Proyectos\BiosFarma\Logica\bin\Debug\Persistencia.pdb
+C:\Proyectos\BiosFarma\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Proyectos\BiosFarma\Logica\obj\Debug\Logica.dll
+C:\Proyectos\BiosFarma\Logica\obj\Debug\Logica.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Logica.dll
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Logica.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Entidades Compartidas.dll
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Persistencia.dll
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Entidades Compartidas.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Logica\bin\Debug\Persistencia.pdb
+C:\Users\sistemas\Desktop\BiosFarma\Logica\obj\Debug\Logica.csprojResolveAssemblyReference.cache
+C:\Users\sistemas\Desktop\BiosFarma\Logica\obj\Debug\Logica.dll
+C:\Users\sistemas\Desktop\BiosFarma\Logica\obj\Debug\Logica.pdb

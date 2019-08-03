@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{92593727-C94C-4330-BB2D-56F46FC660FB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Administracion</RootNamespace>
+    <AssemblyName>Administracion</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Resources\medicina.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ABMEmpleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMEmpleados.Designer.cs">
+      <DependentUpon>ABMEmpleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMFarmaceuticas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMFarmaceuticas.Designer.cs">
+      <DependentUpon>ABMFarmaceuticas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ABMMedicamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ABMMedicamentos.Designer.cs">
+      <DependentUpon>ABMMedicamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaEncargados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaEncargados.Designer.cs">
+      <DependentUpon>AltaEncargados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AltaPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AltaPedidos.Designer.cs">
+      <DependentUpon>AltaPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CambioEstadoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CambioEstadoPedidos.Designer.cs">
+      <DependentUpon>CambioEstadoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Constantes.cs" />
+    <Compile Include="ListadoPedidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListadoPedidos.Designer.cs">
+      <DependentUpon>ListadoPedidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEmpleado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEmpleado.Designer.cs">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MenuEncargado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuEncargado.Designer.cs">
+      <DependentUpon>MenuEncargado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NuevaContrasena.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NuevaContrasena.Designer.cs">
+      <DependentUpon>NuevaContrasena.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServicioFarma\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ABMEmpleados.resx">
+      <DependentUpon>ABMEmpleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMFarmaceuticas.resx">
+      <DependentUpon>ABMFarmaceuticas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ABMMedicamentos.resx">
+      <DependentUpon>ABMMedicamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaEncargados.resx">
+      <DependentUpon>AltaEncargados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AltaPedidos.resx">
+      <DependentUpon>AltaPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CambioEstadoPedidos.resx">
+      <DependentUpon>CambioEstadoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListadoPedidos.resx">
+      <DependentUpon>ListadoPedidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEmpleado.resx">
+      <DependentUpon>MenuEmpleado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuEncargado.resx">
+      <DependentUpon>MenuEncargado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NuevaContrasena.resx">
+      <DependentUpon>NuevaContrasena.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\Entidades_Compartidas.Farmaceutica.datasource" />
+    <None Include="Properties\DataSources\Entidades_Compartidas.Medicamento.datasource" />
+    <None Include="Properties\DataSources\Entidades_Compartidas.PedidoCabezal.datasource" />
+    <None Include="Properties\DataSources\Entidades_Compartidas.Usuario.datasource" />
+    <None Include="Resources\add_icon-icons.com_74429.ico" />
+    <None Include="Service References\ServicioFarma\Administracion.ServicioFarma.Farmaceutica.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioFarma\Administracion.ServicioFarma.Medicamento.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioFarma\Administracion.ServicioFarma.PedidoCabezal.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioFarma\Administracion.ServicioFarma.Usuario.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServicioFarma\ServicioWCF.wsdl" />
+    <None Include="Service References\ServicioFarma\ServicioWCF.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioFarma\ServicioWCF1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServicioFarma\ServicioWCF2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_icon-icons.com_52393.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete_delete_exit_1577.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Undo_icon-icons.com_73701.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\writeanote_79997.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 %28x86 y x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\ServicioFarma\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioFarma\ServicioWCF.disco" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioFarma\configuration91.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioFarma\configuration.svcinfo" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Service References\ServicioFarma\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicina.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\medicina.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
